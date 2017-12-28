@@ -1,0 +1,19 @@
+V -t * -v 1.0a5 -a 0
+A -t * -n 1 -p 0 -o 0x7fffffff -c 30 -a 1
+A -t * -h 1 -m 1073741823 -s 0
+n -t * -a 4 -s 4 -S UP -v circle -c black -i black
+n -t * -a 0 -s 0 -S UP -v circle -c black -i black
+n -t * -a 5 -s 5 -S UP -v circle -c black -i black
+n -t * -a 1 -s 1 -S UP -v circle -c black -i black
+n -t * -a 2 -s 2 -S UP -v circle -c black -i black
+n -t * -a 3 -s 3 -S UP -v circle -c black -i black
+l -t * -s 0 -d 1 -S UP -r 25000000 -D 0.01 -c black -o right
+l -t * -s 1 -d 2 -S UP -r 2500000 -D 0.050000000000000003 -c black -o right
+l -t * -s 2 -d 3 -S UP -r 25000000 -D 0.01 -c black -o right
+l -t * -s 4 -d 1 -S UP -r 25000000 -D 0.01 -c black -o right
+l -t * -s 2 -d 5 -S UP -r 25000000 -D 0.01 -c black -o right
+q -t * -s 2 -d 1 -a 2.5
+q -t * -s 1 -d 2 -a 2.5
++ -t 0.1 -s 0 -d 1 -p tcp -e 40 -c 0 -i 0 -a 0 -x {0.0 3.0 0 ------- null}
+- -t 0.1 -s 0 -d 1 -p tcp -e 40 -c 0 -i 0 -a 0 -x {0.0 3.0 0 ------- null}
+h -t 0.1 -s 0 -d 1 -p tcp -e 40 -c 0 -i 0 -a 0 -x {0.0 3.0 -1 ------- null}
