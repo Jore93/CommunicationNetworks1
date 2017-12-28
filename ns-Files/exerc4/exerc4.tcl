@@ -18,7 +18,7 @@ proc finish {} {
 	global ns f0 f1
 	$ns flush-trace
 	puts "running nam..."
-#	exec nam -a hw3.nam &
+	exec nam -a hw3.nam &
         #Close the output files
         close $f0
         close $f1
